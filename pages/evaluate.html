@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/evaluate.css">
+    <title>Evaluate Coaches</title>
+    <!-- Font Awesome Libary -->
+    <link rel="stylesheet" href="../css/all.min.css">
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="">
+            </div>
+            <a href="../index.html" class="nav">
+                <div class="icon">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="cover">
+        <img class="i1" src="../images/cover.png" alt="">
+        <img style="top: 70%; left: 10px; width: 350px;" src="../images/goal.png" alt="">
+    </div>
+
+    <div class="evaluate-container">
+        <div class="header">
+            <div class="logo">
+                <img src="../images/cover.png" alt="">
+            </div>
+            <div class="title">
+                <h3>تقييم المدرب</h3>
+                <p>Evaluate Coaches</p>
+                <div class="text">
+                    <p>عزيزي المشترك <br>
+                        ‌نحن نقدر اهتمامكم المستمر ودعمكم للأكاديمية. <br>
+                        ‌نسعد للغاية بأن لديكم تجربة مع مدربي أكاديمية رومانيستا. <br>
+                        ‌نود ان نحصل على ارائكم حول المدرب الحالي والمجهودات التي يبذله فيما يتعلق بالأساسيات وتطوير الاعبين 
+                    </p>
+                </div>
+                <div class="text">
+                    <h2>شروط التقييم</h2>
+                    <p>يحق للاعب طلب تقييم مرة كل أربع أشهر عبر ملئ الاستبيان</p>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+    </div>
+
+    <div class="btw">
+        <i class="fa-regular fa-futbol"></i>
+    </div>
+
+    <div class="evaluate-container">
+        <div class="text">
+            <h2>قيم هنا</h2>
+            <p>evaluate here</p>
+            <form action="">
+                <label for="">الاسم الثلاثي</label>
+                <input type="text"  class="name">
+                <label for="">رقم الهاتف</label>
+                <input type="number" class="number">
+                <label for="">اسم المدرب</label>
+                <input type="text" class="coach">
+                <label for="">الفئة</label>
+                <input type="text" class="grade" >
+                <!-- evaluate -->
+                <label for="">روح المدرب في التعامل مع اللاعبين</label>
+                <select name="e1" class="e1" id="e1" placeholder="-- غير محدد --">
+                    <option value="+++">أكثر من رائع</option>
+                    <option value="++">جيد</option>
+                    <option value="+">متوسط</option>
+                    <option value="-">ضعيف</option>
+                    <option value="-">سيىء</option>
+                </select>
+                <label for="">هل تشعرون أن المدرب يساعدكم في تحقيق التطور</label>
+                <select name="e2" class="e2" id="e2" placeholder="-- غير محدد --">
+                    <option value="+++">نعم بشكل كبير</option>
+                    <option value="++">نعم الى حد ما</option>
+                    <option value="+">يصعب التقييم</option>
+                    <option value="-">لا بشكل كبير</option>
+                    <option value="--">لا على الاطلاق</option>
+                </select>
+                <label for="">هل تعتقدون أن المدرب يولي الاهتمام الكافي للتدريب و لتطوير الأساسيات</label>
+                <select name="e3" class="e3" id="e3" placeholder="-- غير محدد --">
+                    <option value="volvo">بالتأكيد</option>
+                    <option value="saab">الى حد ما</option>
+                    <option value="mercedes">لا يمكن الحكم</option>
+                    <option value="audi">لا</option>
+                    <option value="audi">لا أعلم</option>
+                </select>
+                <label for="">هل تعتبرون أن لمدرب يقدم توجيهات و نصائح فعالة خلال التدريبات و المباريات </label>
+                <select name="e4" class="e4" id="e4" placeholder="-- غير محدد --">
+                    <option value="+++">بالتأكيد</option>
+                    <option value="++">نعم الى حد ما</option>
+                    <option value="+">يصعب التقييم</option>
+                    <option value="-">لا بشكل كبير</option>
+                    <option value="--">لا على الاطلاق</option>
+                </select>
+                <label for="">تعليقات اضافية أو اقتراحات حول المدرب الحالي</label>
+                <textarea class="desc" type="text"></textarea>
+                <button type="submit" onclick="sendwhatsapp();">أرسل التقييم</button>
+
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        function sendwhatsapp(){
+            var phonenumber = "+96176040235";
+
+            var name = document.querySelector('.name').value;
+            var number = document.querySelector('.number').value;
+            var coach = document.querySelector('.coach').value;
+            var grade = document.querySelector('.grade').value;
+            var e1 = document.querySelector('.e1').value;
+            var e2 = document.querySelector('.e2').value;
+            var e3 = document.querySelector('.e3').value;
+            var e4 = document.querySelector('.e4').value;
+            var desc = document.querySelector('.desc').value;
+
+            var url = "https://wa.me/" + phonenumber + "?text="
+            + "*الاسم:* " + "محمود" + "%0a"
+            + "*Number:* " + number + "%0a"
+            + "*coa:* " + name + "%0a"
+            + "*Number:* " + number + "%0a"
+            + "*Name:* " + name + "%0a"
+            + "*Number:* " + number + "%0a"
+            + "*Name:* " + name + "%0a"
+            + "*Number:* " + number + "%0a"
+
+            window.open(url, '_blank').focus();
+        }
+    </script>
+</body>
+</html>

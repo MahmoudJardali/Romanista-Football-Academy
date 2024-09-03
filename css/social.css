@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat", sans-serif;
+}
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #2b2c33;
+}
+.cover{
+    position: fixed;
+    /* position: relative; */
+    width: 100%;
+    min-height: 100vh;
+    z-index: 0;
+}
+.cover img{
+    width: 250px;
+    position: absolute;
+    z-index: -1;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.cover::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #2b2c33db; 
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.header{
+    width: 100%;
+    z-index: 6;
+    /* height: 150px; */
+}
+.header .container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.header .logo img{
+    width: 180px;
+}
+
+.nav .icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:#991b30ec;
+    display: flex;
+    justify-content:center;
+    align-items: center;    
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 3;               /* Z INDEX  WARNING  !!!!!!!! */
+}
+.nav .icon i{
+    font-size: 25px;
+    color: #2b2c33;
+}
+
+.social-container{
+    position: relative;
+    width: 95%;
+    background-color: #28282960;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 0 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.social-container h3, .social-container h2, p{
+    font-family: "Noto Kufi Arabic", sans-serif;
+}
+.social-container .title{
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+.social-container .title h2{
+    color: #991b30;
+    font-size: 28px;
+    font-weight: 900;
+}
+.social-container .title p{
+    color: #fff;
+    font-size: 22px;
+    margin-top: 0;
+}
+.social-container .card{
+    width: 250px;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+    border-top: 5px solid #991b30;
+}
+/* logo */
+.social-container .header{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0px;
+    z-index: 4;                      
+}
+.social-container .header .logo{
+    position: absolute;
+    top: 5px;
+    left: -10px;
+}
+.social-container .header .logo img{
+    width: 75px;
+}
+.social-container .header .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.social-container .header .title h2{
+    color: #991b30;
+    font-family: "Noto Kufi Arabic", sans-serif;
+    font-size: 20px;
+}
+.content{
+    width: 100%;
+    padding: 20px 0;
+}
+.content a{
+    width: 75%;
+    display: block;
+    margin: auto;
+    background-color: #fff;
+    margin: 10px auto;
+    height: 45px; 
+    border-radius: 20px; 
+    text-decoration: none;
+}
+.content .btn{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #7b7b7d50;
+    transition: 0.2s;
+}
+.content i{
+    font-size: 30px;
+    color: #fff;
+}
+.content .btn:first-child i{
+    /* color: #f00; */
+}
+.content .btn:first-child{
+    background-color: #ff0000aa;
+}
+.content .btn:nth-child(2) i{
+    color: #fff;
+}
+.content .btn:nth-child(2){
+    background: radial-gradient(circle at 30% 107%, #fdf497aa 0%, #fdf497aa 5%, #fd5949aa 45%, #d6249faa 60%, #285AEBaa 90%);
+}
+.content .btn:nth-child(3) i{
+    /* color: #1877f2; */
+}
+.content .btn:nth-child(3){
+    background-color: #1877f2aa;
+}
+.content .btn:nth-child(4) i{
+    /* color: #128c7e; */
+}
+.content .btn:nth-child(4){
+    background-color: #128c7eaa;
+}
+.content .btn:nth-child(5) i{
+    /* color: #111; */
+}
+.content .btn:nth-child(5){
+    background-color: #111111aa;
+}
+
+.content a:hover{
+    transform: scale(1.05);
+}

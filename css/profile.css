@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat", sans-serif;
+}
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #7b7b7d;
+    background-color: #2b2c33;
+}
+.cover{
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 0;
+}
+.cover img{
+    width: 250px;
+    position: absolute;
+    z-index: -1;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.cover::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #7b7b7ddb;
+    background-color: #2b2c33db; 
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.header{
+    width: 100%;
+    z-index: 6;
+    /* height: 150px; */
+}
+.header .container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.header .logo img{
+    width: 180px;
+}
+
+.nav .icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:#991b30ec;
+    display: flex;
+    justify-content:center;
+    align-items: center;    
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 3;               /* Z INDEX  WARNING  !!!!!!!! */
+}
+.nav .icon i{
+    font-size: 25px;
+    color: #2b2c33;
+}
+
+.profile-container{
+    position: relative;
+    width: 95%;
+    /* background-color: #fff; */
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 0 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.profile-container::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35); 
+    /* z-index: 2; */
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+}
+.profile-container .header{
+    position: relative;
+    width: 100%;
+    /* background-color: #ccc; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0px;
+    z-index: 4;                      /* Z INDEX  WARNING  !!!!!!!! */
+    margin-bottom: 25px;
+}
+.profile-container .header .logo{
+    position: absolute;
+    top: 5px;
+    left: -10px;
+}
+.profile-container .header .logo img{
+    width: 75px;
+}
+.profile-container .header .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profile-container .header .title h3{
+    font-family: "Noto Kufi Arabic", sans-serif;
+    font-size: 24px;
+    color: #991b30;
+}
+.profile-container .header .title p{
+    color: #fff;
+}
+/* Start Profile */
+.cards{
+    position: relative;
+    /* display: flex; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    padding: 10px 0;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 50px;
+}
+.profile-container .card {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background-color: #fff;
+    /* background-color: #54677c; */
+    border-radius: 20px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+    margin:  10px auto;
+    display: block;
+    /* flex-direction: column; */
+    /* justify-content: center;
+    align-items: center; */
+    background-size: 45%;
+    background-position:  20px;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+}
+.c1{
+    margin-top: 0px;
+}
+.profile-container .c2, .profile-container .c3{
+    margin-top: 120px
+}
+.profile-img {
+    top: -50px;
+    position: relative;
+    width: 100%;
+    height: 180px;
+    border-radius: 50px 70px 10px 10px ;
+    /* border-radius: 50%; */
+    position: absolute;
+    /* right: -30px; */
+    box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.5),
+    0 5px 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #2b2c33;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    z-index: 2;
+    border-top: 5px solid #f8ba16;
+}
+.profile-img::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #2b2c33f1;
+    border-radius: 50px 70px 10px 10px ;
+    z-index: 2;
+}
+.profile-img img{
+    position: absolute;
+    width: 200px;
+    z-index: 10;
+}
+.icon-img{
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    left: 40px;
+    z-index: 0;
+    border-radius: 50px 70px 10px 10px ;
+}
+.icon-img i{
+    font-size: 105px;
+}
+.icons-cover{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.icons-cover i:first-child{
+    position: absolute;
+    top: 0px;
+    right: 70px;
+    color: #7b7b7d9a;
+    font-size: 80px;
+}
+.icons-cover i:last-child{
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    color: #ffffff50;
+    font-size: 60px;
+    rotate: 25deg;
+}
+.profile-img .icons{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    z-index: 10;
+}
+.profile-container .icons i{
+    /* position: absolute; */
+    font-size: 35px;
+    color: #991b30d1;
+    /* color: #fff; */
+}
+/* .icons i:first-child{
+    rotate: 0deg;
+    bottom: 40px;
+    right: 90px;
+}
+.icons i:nth-child(2){
+    rotate: 15deg;
+    bottom: 30px;
+    right: 45px;
+}
+.icons i:last-child{
+    rotate: 30deg;
+} */
+.card .text{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    z-index: 2;
+    direction: rtl;
+    padding-bottom: 15px;
+}
+.card .text p {
+    width: 100%;
+    position: relative;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #252525;
+    text-align: center;
+    font-size: 16px;
+    padding: 7px 10px;
+    color: #252525;
+    font-weight: 400;
+    font-family: "Noto Kufi Arabic", sans-serif;
+    /* border-bottom: 2px solid #25252539; */
+}
+.card .text p::before{
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 1px;
+    background-color: #7b7b7d50;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.card .text p:first-child{
+    letter-spacing: 0.8px;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 0px 8px;
+    padding-bottom: 15px;
+    font-family: "Noto Kufi Arabic", sans-serif;
+}
+.card .text p:nth-child(2){
+    font-size: 20px;
+    font-weight: 500;
+}
+.card .text p:last-child{
+    /* padding-bottom: 5px; */
+}
+.card .text .name::before{
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 1px;
+    background-color: #7b7b7d50;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.card .text i{
+    position: absolute;
+    right: 5px;
+    top: 11px;
+}
+/* .c2 .profile-img {
+    border-top: 5px solid #f8ba16;
+} */
+/* End Profile */
