@@ -150,8 +150,8 @@ body {
 .about-container .content .t1{
     position: absolute;
     width: 30%;
-    left: -15px;
-    top: 240px;
+    left: -18px;
+    top: 250px;
     /* border-top: 5px solid #991b30;
     border-right: 10px solid #991b30;
     border-radius: 10px; */
@@ -177,7 +177,7 @@ span{
     width: 80%;
     position: absolute;
     left: 50%;
-    top: 486px;
+    top: 490px;
     transform: translateX(-50%);
 }
 .border2{
