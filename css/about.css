@@ -151,7 +151,7 @@ body {
     position: absolute;
     width: 30%;
     left: -18px;
-    top: 250px;
+    top: 240px;
     /* border-top: 5px solid #991b30;
     border-right: 10px solid #991b30;
     border-radius: 10px; */
@@ -177,7 +177,7 @@ span{
     width: 80%;
     position: absolute;
     left: 50%;
-    top: 495px;
+    top: 486px;
     transform: translateX(-50%);
 }
 .border2{
