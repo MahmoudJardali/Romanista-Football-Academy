@@ -150,8 +150,8 @@ body {
 .about-container .content .t1{
     position: absolute;
     width: 30%;
-    left: 0;
-    top: 200px;
+    left: -15px;
+    top: 240px;
     /* border-top: 5px solid #991b30;
     border-right: 10px solid #991b30;
     border-radius: 10px; */
@@ -177,7 +177,7 @@ span{
     width: 80%;
     position: absolute;
     left: 50%;
-    top: 444px;
+    top: 486px;
     transform: translateX(-50%);
 }
 .border2{
@@ -191,7 +191,7 @@ span{
     border-top:20px solid #f8ba16;
     border-right:20px solid #f8ba16;
     right: 17px;
-    top: -20px;
+    top: -12px;
     border-radius: 10px;
 }
 .border2::after{
@@ -202,6 +202,6 @@ span{
     border-bottom:20px solid #991b30;
     border-left:20px solid #991b30;
     left: 17px;
-    top: 80px;
+    top: 72px;
     border-radius: 10px;
 }
