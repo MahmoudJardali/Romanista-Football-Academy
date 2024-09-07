@@ -162,8 +162,8 @@ span{
 .about-container span::before{
     content: '';
     position: absolute;
-    top: -65px;
-    right: 250px;
+    top: -60px;
+    right: 235px;
     width: 70px;
     height: 120px;
     border-top:20px solid #991b30;
@@ -177,7 +177,7 @@ span{
     width: 80%;
     position: absolute;
     left: 50%;
-    top: 486px;
+    top: 493px;
     transform: translateX(-50%);
 }
 .border2{
