@@ -72,13 +72,13 @@
             <p>evaluate here</p>
             <form action="">
                 <label for="">الاسم الثلاثي</label>
-                <input type="text"  class="name">
+                <input type="text"  class="name" required>
                 <label for="">رقم الهاتف</label>
-                <input type="number" class="number">
+                <input type="number" class="number" required>
                 <label for="">اسم المدرب</label>
-                <input type="text" class="coach">
+                <input type="text" class="coach" required>
                 <label for="">الفئة</label>
-                <input type="text" class="grade" >
+                <input type="text" class="grade" required>
                 <!-- evaluate -->
                 <label for="">روح المدرب في التعامل مع اللاعبين</label>
                 <select name="e1" class="e1" id="e1" placeholder="-- غير محدد --">
@@ -136,14 +136,15 @@
             var desc = document.querySelector('.desc').value;
 
             var url = "https://wa.me/" + phonenumber + "?text="
-            + "*الاسم:* " + "محمود" + "%0a"
-            + "*Number:* " + number + "%0a"
-            + "*coa:* " + name + "%0a"
-            + "*Number:* " + number + "%0a"
-            + "*Name:* " + name + "%0a"
-            + "*Number:* " + number + "%0a"
-            + "*Name:* " + name + "%0a"
-            + "*Number:* " + number + "%0a"
+            + " *الاسم:* " + name + "%0a"
+            + " *رقم الهاتف:* " + number + "%0a"
+            + " *المدرب:* " + coach + "%0a"
+            + " *الفئة:* " + grade + "%0a"
+            + " *روح المدرب في التعامل مع اللاعبين:* " + e1 + "%0a"
+            + " *هل تشعرون أن المدرب يساعدكم في تحقيق التطور:* " + e2 + "%0a"
+            + " *هل تعتقدون أن المدرب يولي الاهتمام الكافي للتدريب و لتطوير الأساسيات:* " + e3 + "%0a"
+            + " *هل تعتبرون أن لمدرب يقدم توجيهات و نصائح فعالة خلال التدريبات و المباريات :* " + e4 + "%0a"
+            + " *اقتراحات أخرى:* " + desc + "%0a"
 
             window.open(url, '_blank').focus();
         }
