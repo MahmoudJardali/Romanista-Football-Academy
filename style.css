@@ -112,6 +112,14 @@ span{
     background-position:  20px;
     background-repeat: no-repeat;
 }
+.c0{
+    background: 
+        linear-gradient(45deg , #54677cea, #54677cea),
+        url('images/cover.png'); 
+    background-size: cover, 45%; 
+    background-position: center, 20px; 
+    background-repeat: no-repeat;
+}
 .c1{
     background: 
         linear-gradient(45deg , #3498dbea, #9c59b6da),
