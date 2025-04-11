@@ -73,6 +73,25 @@ body {
 
 .subheader{
     margin-bottom: 30px;
+    width: 80%;
+    margin: auto;
+}
+.subheader .text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.subheader .text p{
+    text-align: center;
+}
+.subheader .images{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0 100px; */
+}
+.subheader .images img{
+    width: 150px;
 }
 .nav{
    
